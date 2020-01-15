@@ -19,6 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoggInnStudentActivity" />
+        <activity android:name=".RegistrerStudentActivity" />
+        <activity android:name=".LoggInnForeleserActivity" />
+        <activity android:name=".RegistrerForeleserActivity" />
+        <activity android:name=".StartsideStudentActivity" />
+        <activity android:name=".StartsideForeleserActivity" />
+        <activity android:name=".StudentProfilActivity" />
+        <activity android:name=".ForeleserProfilActivity"></activity>
     </application>
 
 </manifest>
