@@ -6,4 +6,94 @@
     android:layout_height="match_parent"
     tools:context=".StudentProfilActivity">
 
+    <TextView
+        android:id="@+id/txtStudentProfilNavn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Student Stian"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtStudentProfilEpost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="E-post"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/txtStudentProfilNavn"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <TextView
+        android:id="@+id/txtStudentProfilEpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="40dp"
+        android:text="stians@hiof.no"
+        app:layout_constraintBottom_toTopOf="@+id/txtStudentProfilRetning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStudentProfilNavn" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Studieretning"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/txtStudentProfilRetning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Informatikk"
+        app:layout_constraintBottom_toTopOf="@+id/txtStudentProfilKull"
+        app:layout_constraintStart_toStartOf="@+id/txtStudentProfilEpost" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="148dp"
+        android:text="Årskull"
+        app:layout_constraintBottom_toTopOf="@+id/btnStudentProfilRediger"
+        app:layout_constraintEnd_toStartOf="@+id/txtStudentProfilKull"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStudentProfilKull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:text="2017"
+        app:layout_constraintBottom_toTopOf="@+id/btnStudentProfilRediger"
+        app:layout_constraintStart_toStartOf="@+id/txtStudentProfilRetning" />
+
+    <Button
+        android:id="@+id/btnStudentProfilRediger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="60dp"
+        android:text="Rediger info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
