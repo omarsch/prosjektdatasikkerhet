@@ -21,29 +21,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.872" />
 
-    <TextView
-        android:id="@+id/txtForeleser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="Foreleser:"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnForeleserLoggInn"
-        app:layout_constraintEnd_toEndOf="@+id/btnStudentLoggInn"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnStudentLoggInn" />
-
     <Button
         android:id="@+id/btnStudentLoggInn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
         android:text="Logg inn"
-        app:layout_constraintBottom_toTopOf="@+id/txtForeleser"
         app:layout_constraintEnd_toEndOf="@+id/txtStudent"
         app:layout_constraintEnd_toStartOf="@+id/btnStudentRegistrer"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtStudent" />
+        app:layout_constraintStart_toStartOf="@+id/txtStudent"
+        tools:layout_editor_absoluteY="187dp" />
 
     <Button
         android:id="@+id/btnStudentRegistrer"
@@ -57,28 +44,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btnStudentLoggInn"
         app:layout_constraintVertical_bias="0.474" />
-
-    <Button
-        android:id="@+id/btnForeleserLoggInn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Logg inn"
-        app:layout_constraintBottom_toBottomOf="@+id/btnForeleserRegistrer"
-        app:layout_constraintEnd_toEndOf="@+id/txtForeleser"
-        app:layout_constraintEnd_toStartOf="@+id/btnForeleserRegistrer"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtForeleser"
-        app:layout_constraintTop_toTopOf="@+id/btnForeleserRegistrer"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/btnForeleserRegistrer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="160dp"
-        android:text="Registrer ny"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

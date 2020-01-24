@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
     //View variables
     private Button btnStudentLoggInn;
     private Button btnStudentRegistrer;
-    private Button btnForeleserLoggInn;
-    private Button btnForeleserRegistrer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
         btnStudentLoggInn = findViewById(R.id.btnStudentLoggInn);
         btnStudentRegistrer = findViewById(R.id.btnStudentRegistrer);
-        btnForeleserLoggInn = findViewById(R.id.btnForeleserLoggInn);
-        btnForeleserRegistrer = findViewById(R.id.btnForeleserRegistrer);
 
         btnStudentLoggInn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,22 +38,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toStudentRegistrer = new Intent (v.getContext(), RegistrerStudentActivity.class);
                 startActivity(toStudentRegistrer);
-            }
-        });
-
-        btnForeleserLoggInn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent toForeleserLoggInn = new Intent (v.getContext(), LoggInnForeleserActivity.class);
-                startActivity(toForeleserLoggInn);
-            }
-        });
-
-        btnForeleserRegistrer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent toForeleserRegistrer = new Intent (v.getContext(), RegistrerForeleserActivity.class);
-                startActivity(toForeleserRegistrer);
             }
         });
     }
