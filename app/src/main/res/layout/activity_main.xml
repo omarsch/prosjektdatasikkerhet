@@ -25,24 +25,24 @@
         android:id="@+id/btnStudentLoggInn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="252dp"
         android:text="Logg inn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/txtStudent"
         app:layout_constraintEnd_toStartOf="@+id/btnStudentRegistrer"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtStudent"
-        tools:layout_editor_absoluteY="187dp" />
+        app:layout_constraintStart_toStartOf="@+id/txtStudent" />
 
     <Button
         android:id="@+id/btnStudentRegistrer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginEnd="56dp"
         android:layout_marginBottom="8dp"
         android:text="Registrer ny"
-        app:layout_constraintBottom_toBottomOf="@+id/btnStudentLoggInn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btnStudentLoggInn"
-        app:layout_constraintVertical_bias="0.474" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
