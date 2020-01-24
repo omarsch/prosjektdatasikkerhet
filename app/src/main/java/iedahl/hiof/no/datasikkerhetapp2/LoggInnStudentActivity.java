@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -16,6 +17,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class LoggInnStudentActivity extends AppCompatActivity {
 
@@ -30,11 +32,7 @@ public class LoggInnStudentActivity extends AppCompatActivity {
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://158.39.188.214/foreleser/api/student/verify.php?EMAIL=enis_jasharaj@hotmail.com&PASSWORD=esel123";
-
-        /*HashMap<String, String> params = new HashMap<String, String>();
-        params.put("EMAIL", "enis_jasharaj@hotmail.com");
-        params.put("PASSWORD", "esel123");*/
+        String url ="http://158.39.188.214/foreleser/api/student/verify.php";
 
         // Request a string response from the provided URL.
         JsonObjectRequest req = new JsonObjectRequest(url, null,
@@ -47,15 +45,25 @@ public class LoggInnStudentActivity extends AppCompatActivity {
                         textview.setText(test);
                     }
                 }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        String err = "That didn't work!";
+                        textview.setText(err);
+                    }
+        })
+        {
+
             @Override
-            public void onErrorResponse(VolleyError error) {
-                String err = "That didn't work!";
-                textview.setText(err);
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("EMAIL", "enis_jasharaj@hotmail.com");
+                headers.put("PASSWORD", "esel123");
+                return headers;
             }
-        });
+
+        };
 
         // Add the request to the RequestQueue.
         queue.add(req);
-
     }
 }
