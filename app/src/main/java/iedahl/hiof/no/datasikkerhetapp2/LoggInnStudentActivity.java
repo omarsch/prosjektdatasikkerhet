@@ -42,6 +42,7 @@ public class LoggInnStudentActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         //VolleyLog.v("Response:%n %s", response.toString(4));
+                        //hvis man blir logget inn og får en respons fra api'et skal det stå "yay" i tekstfeltet øverst
                         String test = "Yay!";
                         textview.setText(test);
                     }

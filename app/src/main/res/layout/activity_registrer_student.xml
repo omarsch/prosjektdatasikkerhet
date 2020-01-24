@@ -27,7 +27,7 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="8dp"
         android:text="Navn"
-        app:layout_constraintEnd_toStartOf="@+id/txtNyForeleserNavn"
+        app:layout_constraintEnd_toStartOf="@+id/txtNyStudentNavn"
         app:layout_constraintHorizontal_bias="0.283"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -62,7 +62,7 @@
         app:layout_constraintVertical_bias="0.044" />
 
     <EditText
-        android:id="@+id/txtNyForeleserNavn"
+        android:id="@+id/txtNyStudentNavn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -71,11 +71,11 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/txtNyForeleserEpost"
+        app:layout_constraintStart_toStartOf="@+id/txtNyStudentEpost"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/txtNyForeleserEpost"
+        android:id="@+id/txtNyStudentEpost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -85,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/spnNyStudentStudie"
-        app:layout_constraintTop_toBottomOf="@+id/txtNyForeleserNavn" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNyStudentNavn" />
 
     <Spinner
         android:id="@+id/spnNyStudentStudie"
@@ -96,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/spnNyStudentKull"
-        app:layout_constraintTop_toBottomOf="@+id/txtNyForeleserEpost" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNyStudentEpost" />
 
     <Spinner
         android:id="@+id/spnNyStudentKull"
