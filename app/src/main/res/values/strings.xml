@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">DatasikkerhetApp2</string>
     <string name="action_settings">Settings</string>
+    <string-array name="studieprogram">
+        <item>Digitale Medier og Design</item>
+        <item>Informasjonssystemer</item>
+        <item>Ingeniørfag - data</item>
+        <item>Informasjonsteknologi - årsstudium</item>
+        <item>Informatikk</item>
+    </string-array>
+    <string-array name="kull">
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
 </resources>
